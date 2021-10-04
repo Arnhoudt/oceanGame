@@ -7,8 +7,12 @@ const $score = document.querySelector("#score")
 const $oxygenDepletion = document.querySelector("#oxygen_depletion")
 
 const restart = () =>{
+  gameEntities.forEach(gameEntity => {
+    scene.remove(gameEntity["three"])
+  })
+  gameEntities = []
   score = 0
-  oxygen = 8000
+  oxygen = 800
   gameActive = true
 }
 
