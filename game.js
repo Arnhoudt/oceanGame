@@ -12,7 +12,7 @@ const restart = () =>{
   })
   gameEntities = []
   score = 0
-  oxygen = 800
+  oxygen = 8000
   gameActive = true
 }
 
