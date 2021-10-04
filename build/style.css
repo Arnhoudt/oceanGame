@@ -1,0 +1,146 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at center,black, blue);
+    font-family: "courgette";
+    position: relative
+
+}
+#defaultCanvas0{
+    position: absolute;
+}
+
+.stat>p{
+    font-weight: bold;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: lightskyblue;
+}
+
+#score{
+    position: absolute;
+    color: lightskyblue;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#oxygen{
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#oxygen_barWrapper{
+    background-color: cyan;
+    width: 2rem;
+    height: 80vh;
+}
+
+#oxygen_depletion{
+    background-color: darkred;
+    width: 2rem;
+    height: 0;
+}
+
+
+.hidden{
+    display: none;
+}
+p{
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 15vw;
+}
+
+h2{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 4rem;
+}
+
+.onboarding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenCanvas3{
+    display: none;
+}
+
+.screenCanvas2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.screenCanvas1{
+    position: absolute;
+    top: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 340px;
+    right: 0;
+}
+
+.screenCanvas0{
+    display: none;
+}
+
+#standPosition{
+    position: absolute;
+    top: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 340px;
+}
+
+#cameraPlaceholder{
+    height: 300px;
+}
+
+.mainButton{
+    border-radius: 5rem;
+    background-color: cornflowerblue;
+    border: none;
+    font-family: "courgette";
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+#gameOver_score{
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+#gameOver_meter{
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+
+
+@font-face {
+    font-family: courgette;
+    src: url(Courgette-Regular.ttf);
+  }
