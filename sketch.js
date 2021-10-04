@@ -41,7 +41,7 @@ function draw() {
     camera.position.y = (-shoulderHeight/RECORDER_HEIGHT+0.5) * MOVEMENT_SENSITIVITY
     camera.position.x = (-center/RECORDER_WIDTH+0.5) * MOVEMENT_SENSITIVITY
   }
-  // drawKeypoints();
+  drawKeypoints();
   // drawSkeleton();
 }
 

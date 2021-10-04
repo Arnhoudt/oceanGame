@@ -18,13 +18,12 @@ const showScreen = screenIndex => {
 
 document.querySelector("#startDive").addEventListener('click', () =>{ showScreen(1)})
 document.querySelector("#doneCalibration").addEventListener('click', () =>{
+    restart()
     animate()
-    setInterval(()=>{
-        if(gameEntities.length < 100){ // Prevents crashes caused by unexpected behaviour related to the browser background tasks
-        for(let i = 0; i < 1; i++){
-            gameEntities.push(createTrain(scene))
-        }
-        }
-    },1000)
+    showScreen(2)
+})
+document.querySelector("#restart").addEventListener('click', () =>{
+    restart()
+    animate()
     showScreen(2)
 })

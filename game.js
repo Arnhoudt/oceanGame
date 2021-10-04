@@ -1,10 +1,16 @@
 let gameEntities = []
 camera.position.y = 0.1
-let score = 0
-let oxygen = 800
-let gameActive = true
+let score
+let oxygen
+let gameActive = false
 const $score = document.querySelector("#score")
 const $oxygenDepletion = document.querySelector("#oxygen_depletion")
+
+const restart = () =>{
+  score = 0
+  oxygen = 8000
+  gameActive = true
+}
 
 const animate = () => {
   score += 1 + score / 5000
@@ -34,5 +40,14 @@ const animate = () => {
   if(gameActive)
     requestAnimationFrame(animate)
 }
+
+setInterval(()=>{
+  if(gameEntities.length < 100 && gameActive){ // Prevents crashes caused by unexpected behaviour related to the browser background tasks
+      for(let i = 0; i < 1; i++){
+          gameEntities.push(createTrain(scene))
+      }
+  }
+},1000)
+
 camera.position.z = CAMERA_Z;
 
